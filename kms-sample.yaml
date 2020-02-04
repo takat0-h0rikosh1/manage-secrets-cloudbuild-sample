@@ -1,0 +1,8 @@
+steps:
+- name: gcr.io/dd-education-265104/kms-sandbox
+  args:
+  secretEnv: ['WORD']
+secrets:
+- kmsKeyName: projects/dd-education-265104/locations/global/keyRings/kms-sandbox/cryptoKeys/t_horikoshi
+  secretEnv:
+    WORD: "CiQAONtqKAqBXpHU4tBUkXzJMItNlR2DAA9iDKWMhva/hLQVOIkSOQDmZ+/kAOeYaFhpsA2uM/kVFDat7rMECPoa9pDlOhzWg4mARfMx812idF4bD9Zzy3wIccdfVoSzuw=="
